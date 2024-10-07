@@ -4,8 +4,8 @@
         "github.copilot-chat",
         "ms-dotnettools.csdevkit",
         "ms-dotnettools.csharp",
-        "ms-azuretools.vscode-azureterraform",
         "shd101wyy.markdown-preview-enhanced",
-        "vsls-contrib.codetour"
+        "vsls-contrib.codetour",
+        "hashicorp.terraform"
     ]
 }

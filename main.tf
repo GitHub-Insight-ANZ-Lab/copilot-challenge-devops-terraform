@@ -58,10 +58,3 @@ resource "azurerm_network_interface" "internal" {
 output "virtual_network_name" {
   value = azurerm_virtual_network.main.name
 }
-
-// add security group
-resource "azurerm_network_security_group" "main" {
-  name                = "${var.prefix}-nsg"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
-}
