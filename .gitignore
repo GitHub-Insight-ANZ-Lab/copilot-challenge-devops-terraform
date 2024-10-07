@@ -53,6 +53,8 @@ artifacts/
 # Visual Studio Code
 .vscode/
 
+!.vscode/extensions.json
+
 # Rider IntelliJ
 .idea/
 *.sln.iml
