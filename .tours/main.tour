@@ -51,7 +51,7 @@
       {
         "file": "main.tf",
         "line": 200,
-        "description": "Although GitHub Copilot filters code suggestions to include security vulnerabilities, it still does not prevent all vulnerabilities. Therefore, you need to verify that the code is correct and secure, just as you would for human-written code. Finally, let's press the tfsec icon in the menu on the left side of VS Code. This is a tool that analyzes Terraform scripts to detect insecure code sections."
+        "description": "Although GitHub Copilot filters code suggestions to include security vulnerabilities, it still does not prevent all vulnerabilities. Therefore, you need to verify that the code is correct and secure, just as you would for human-written code."
       }
     ],
     "ref": "HEAD"

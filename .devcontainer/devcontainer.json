@@ -1,17 +1,22 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
   "customizations": {
     "vscode": {
       "extensions": [
-        "hashicorp.terraform",
-				"vsls-contrib.codetour",
-				"GitHub.copilot",
-        "tfsec.tfsec"
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.csharp",
+        "shd101wyy.markdown-preview-enhanced",
+        "vsls-contrib.codetour",
+        "hashicorp.terraform"
       ]
     }
   },
   "features": {
-	"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
-	"ghcr.io/dhoeric/features/tfsec:1": {}
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
+    "ghcr.io/dhoeric/features/trivy:1": {},
+    "ghcr.io/devcontainers/features/dotnet:2": {}
   }
 }
