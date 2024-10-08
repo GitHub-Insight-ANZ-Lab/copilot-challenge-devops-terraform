@@ -26,7 +26,7 @@ jobs:
       - name: Terraform Plan
         run: terraform plan -out=tfplan.binary
         working-directory: ./
-
+ 
       - name: Terraform Apply
         if: success()
         run: terraform apply -auto-approve tfplan.binary
