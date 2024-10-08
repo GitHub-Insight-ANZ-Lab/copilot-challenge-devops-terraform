@@ -21,16 +21,16 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-                working-directory: ./
+                working-directory: ./main.tf
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan.binary
-                working-directory: ./
+                working-directory: ./main.tf
 
       - name: Terraform Apply
         if: success()
         run: terraform apply -auto-approve tfplan.binary
-                working-directory: ./
+                working-directory: ./main.tf
 
       - name: Archive Terraform Plan
         if: success()
@@ -38,7 +38,7 @@ jobs:
           echo "Archiving the Terraform Plan output..."
           mkdir -p archive
           cp ./path/to/your/terraform/files/tfplan.binary archive/
-                working-directory: ./
+                working-directory: ./main.tf
 
       - name: Upload Artifact
         if: success()
