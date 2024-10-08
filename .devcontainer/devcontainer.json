@@ -9,7 +9,8 @@
         "ms-dotnettools.csharp",
         "shd101wyy.markdown-preview-enhanced",
         "vsls-contrib.codetour",
-        "hashicorp.terraform"
+        "hashicorp.terraform",
+        "ms-azuretools.vscode-docker"
       ]
     }
   },
