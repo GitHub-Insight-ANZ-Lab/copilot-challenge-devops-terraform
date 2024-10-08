@@ -21,31 +21,31 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-                working-directory: ./main.tf
+        working-directory: ./
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan.binary
-                working-directory: ./main.tf
+        working-directory: ./
 
       - name: Terraform Apply
         if: success()
         run: terraform apply -auto-approve tfplan.binary
-                working-directory: ./main.tf
+        working-directory: ./
 
       - name: Archive Terraform Plan
         if: success()
         run: |
           echo "Archiving the Terraform Plan output..."
           mkdir -p archive
-          cp ./path/to/your/terraform/files/tfplan.binary archive/
-                working-directory: ./main.tf
+          cp .//tfplan.binary archive/
+        working-directory: ./
 
       - name: Upload Artifact
         if: success()
         uses: actions/upload-artifact@v2
         with:
           name: tfplan-binary
-          path: ./path/to/your/terraform/files/archive/tfplan.binary
+          path: .//archive/tfplan.binary
 
     post:
       always:
@@ -53,8 +53,8 @@ jobs:
           - name: Cleanup
             run: |
               echo "Cleaning up..."
-              rm -f ./path/to/your/terraform/files/tfplan.binary
-              rm -f ./path/to/your/terraform/files/tfplan.json
+              rm -f .//tfplan.binary
+              rm -f .//tfplan.json
       success:
         steps:
           - name: Success Message
