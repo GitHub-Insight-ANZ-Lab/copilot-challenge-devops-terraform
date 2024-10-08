@@ -1,0 +1,6 @@
+prefix = "your-prefix"
+location = "your-location"
+resource_group_name = "your-resource-group-name"
+sql_admin_username = "your-sql-admin-username"
+sql_admin_password = "your-sql-admin-password"
+environment = "your-environment"
