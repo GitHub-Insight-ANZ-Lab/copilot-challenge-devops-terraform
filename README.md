@@ -9,15 +9,15 @@ Participants will be guided to install the GitHub Copilot VS Code extension, fol
 
 ## Instructions 
 
-Inside the `.instructions` folder you will find a number of markdown files that contain the instructions for this workshop.
+The workshop is divided into the following sections:
 
-Filename | Description
+Step | Description
 --- | ---
-[1. setup.md](</.instructions/1. setup.md>) | Instructions for installing the GitHub Copilot VS Code extension and joining the GitHub Copilot trial.
-[2. core exercises.md](</.instructions/2. core exercises.md>) | Instructions for getting started with GitHub Copilot.
-[3. terraform challenge.md](</.instructions/3. terraform challenge.md>) | Terraform challenge exercises for participants to complete.
-[4. github actions challenge.md](</.instructions/4. github actions challenge.md>) | GitHub Actions challenge exercises for participants to complete.
-[5. additional resources.md](</.instructions/4. additional resources.md>) | Additional resources for participants to explore after the workshop.
+[Setup](</.instructions/1. setup.md>) | Instructions for installing the GitHub Copilot VS Code extension and joining the GitHub Copilot trial.
+[Core Exercises](</.instructions/2. core exercises.md>) | Instructions for getting started with GitHub Copilot.
+[Terraform Challenge](</.instructions/3. terraform challenge.md>) | Terraform challenge exercises for participants to complete.
+[Github Actions Challenge](</.instructions/4. github actions challenge.md>) | GitHub Actions challenge exercises for participants to complete.
+[Additional Resources](</.instructions/4. additional resources.md>) | Additional resources for participants to explore after the workshop.
 
 
 ## Project Structure
